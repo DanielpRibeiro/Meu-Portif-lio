@@ -1,0 +1,642 @@
+body {
+    background-color: black;
+    color: white;
+    width: 100%;
+    /* padding: 0 10%; */
+    margin: 0 auto;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+:root {
+    --cor-primary: #38EF7D;
+    --cor-primary2: rgb(0, 167, 82);
+    --cor-white: rgb(255, 255, 255);
+    --cor-dark: rgb(12, 12, 12);
+}
+
+.container {
+    display: flex;
+
+    /* espaçamento entre os itens dentro do contêiner */
+    gap: 10px;
+
+    /*  itens dentro do contêiner flexível se movam para a próxima
+    linha quando não houver espaço suficiente na largura do contêiner. */
+    flex-wrap: wrap;
+    padding: 15px;
+    height: auto;
+    align-items: center;
+    margin: 0px 0px;
+}
+
+/* ************** HOME ****************************** */
+
+.cardHome {
+
+    /* background-color: rgb(16, 78, 57); */
+    height: auto;
+    width: 100px;
+    display: block;
+
+    /* pode crescer (flex-grow: 1),
+    não encolherá (flex-shrink: 0) e tem uma base de tamanho de 215 pixels. */
+    flex: 1 0 215px;
+    /* border-radius: 0px; */
+    text-align: left;
+    align-items: center !important;
+    justify-content: center !important;
+    align-content: center;
+
+
+}
+
+.cardHome img {
+    text-align: center !important;
+}
+
+h1 {
+    color: var(--cor-primary);
+    font-size: 50px;
+    font-weight: 900;
+
+}
+
+
+h2 {
+    font-size: 30px;
+    color: var(--cor-white);
+    font-weight: 300;
+    margin-top: -15px;
+    letter-spacing: 0.5px;
+
+}
+
+h3 {
+    font-size: 18px;
+    color: var(--cor-white);
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+
+p {
+
+    font-size: 16px;
+    color: var(--cor-white);
+}
+
+
+/* ********************************************* */
+
+
+.card {
+
+    /* background-color: rgb(16, 78, 57); */
+    height: 130px;
+    width: 100%;
+    display: flex;
+
+    /* pode crescer (flex-grow: 1),
+    não encolherá (flex-shrink: 0) e tem uma base de tamanho de 215 pixels. */
+    flex: 1 0 215px;
+    /* border-radius: 10px; */
+    text-align: center;
+    align-items: center !important;
+    justify-content: center !important;
+
+
+}
+
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+
+}
+
+#cd {
+    /* height: 100%; */
+    background-image: url('assets/elementos/card.png');
+    /* URL da imagem */
+    background-size: contain;
+    /* Define que a imagem deve se conter dentro da div */
+    background-repeat: no-repeat;
+    /* Impede que a imagem seja repetida */
+    background-position: center;
+    /* Centraliza a imagem dentro da div */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 35px;
+    padding: 15px;
+
+
+}
+
+#cd:hover {
+
+    background-image: url('assets/elementos/card2.png');
+    /* URL da imagem */
+    transition: 0.1s;
+
+
+}
+
+#cd:hover img {
+    transform: scale(1.1);
+}
+
+#oct {
+    display: none;
+}
+
+
+/* card 2 ************************************************* */
+
+#cd2 {
+    /* height: 100%; */
+    margin: 13px 13px;
+    height: 420px;
+    padding: 5px;
+    background-image: url('img/Rectangle\ 18.png');
+    /* URL da imagem */
+    background-size: contain;
+    /* Define que a imagem deve se conter dentro da div */
+    background-repeat: no-repeat;
+    /* Impede que a imagem seja repetida */
+    background-position: top;
+    /* Centraliza a imagem dentro da div */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+
+#cd2:hover {
+
+    background-image: url('img/Rectangle\ 19.png');
+    /* URL da imagem */
+
+
+}
+
+#cd2:hover img {
+    transform: scale(1.1);
+}
+
+
+/* ************************************************** */
+
+
+/* modal */
+
+/* Modal Style */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* ************************ */
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--cor-primary);
+    transition: 0.5s;
+}
+
+.logo {
+    padding-top:15px;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.logoFinal img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.logoFinal {
+    margin-bottom: 10px;
+    /* border: 2px solid red; */
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 688px) {
+    nav {
+        display: none;
+    }
+
+    li {
+        margin-right: 0;
+    }
+
+    .logo {
+        align-items: center;
+        justify-content: center;
+    }
+
+    header {
+        /* border: 2px solid white; */
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .cardHome {
+        width: 50px;
+    }
+
+    #sobre-mim {
+        padding-top: 30px;
+    }
+}
+
+.titulo {
+
+    height: auto;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+
+}
+
+#conhecimentos {
+    height: auto;
+    padding: 0px 15px 0px 15px;
+    /* align-items: end; */
+    text-align: center;
+    /* display: grid; */
+    /* float: left; */
+    /* border: 2px solid rebeccapurple; */
+    justify-content: center !important;
+    align-items: center !important;
+
+}
+
+
+#title {
+    height: auto;
+    padding: 30px 0;
+}
+
+
+
+
+@media screen and (max-width: 520px) {
+    .container {
+        height: 590px;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+
+    #cd {
+        flex: 1 0 98px !important;
+        /* border: 3px solid red !important; */
+        padding: 15px;
+
+    }
+
+    #cd2 {
+        flex: 1 0 150px !important;
+        /* border: 3px solid rgb(255, 225, 0) !important; */
+
+    }
+
+    #cd3 {
+        flex: 1 0 130px !important;
+        /* border: 3px solid rgb(204, 0, 255) !important; */
+
+    }
+    #cd5 {
+        flex: 1 0 130px !important;
+        /* border: 3px solid rgb(204, 0, 255) !important; */
+
+    }
+
+    #sobre-mim {
+        padding: 20px 10% !important;
+        height: auto !important;
+
+    }
+
+    #conhecimentos #cd img {
+        width: 80px;
+    }
+
+    #conhecimentos #cd .card {
+        width: 50%;
+    }
+
+    #projec .container .cardHome h3 {
+        font-size: 20px;
+        padding-top: 10px;
+        margin-top: -10px;
+    }
+
+    #projec .container .cardHome h1 {
+        font-size: 40px;
+        width: 30px !important;
+    }
+
+    #projec .container .cardHome h1 {
+        padding: 0px;
+    }
+
+
+    .container .card h2 {
+        font-size: 20px;
+    }
+
+    #conhecimentos #cd5 {
+        width: 5px !important;
+    }
+    section #conhecimentos .container #cd5 {
+        width: 10px !important;
+    }
+    #sobre-mim #sb img{
+        width: 180px;
+        padding: 20px !important;
+    }
+
+    #conhecimentos #cd5{
+        width: 20px !important;
+        border-radius: 15px;
+        /* border: 1px solid red; */
+        
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/* rodape */
+
+
+footer {
+    /* border: 2px solid white; */
+    text-align: center;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    margin-bottom: 10px;
+    /* border: 2px solid red; */
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+@media (max-width: 600px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+
+/*
+-- Estilos CSS - Website da Empresa
+*/
+
+/*
+-- Padrões e Reset
+*/
+
+/*
+-- Tipografia e Cores
+*/
+
+p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/*
+-- Estrutura
+*/
+
+/*
+-- Estilos específicos de Seção
+*/
+#home {
+    background-image: url(img/home.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0 10%;
+}
+
+.home-titulo {
+    margin-top: -130px;
+    text-align: center;
+    width: 100%;
+}
+
+
+#sobre-mim {
+    height: 60vh;
+    background-color: rgb(17, 17, 17);
+    padding: 0 10%;
+}
+
+#conhecimento {
+    background: rgb(0, 167, 82);
+    background: linear-gradient(45deg, rgba(0, 167, 82, 0.5339476855195203) 0%, rgba(0, 0, 0, 1) 46%);
+    padding: 0 10%;
+}
+
+#projec {
+    padding: 0 10%;
+    background: rgb(0, 167, 82);
+    background: linear-gradient(355deg, rgba(0, 167, 82, 0.5339476855195203) 0%, rgba(0, 0, 0, 1) 46%);
+}
+
+#cd5 img {
+    width: 70px;
+    margin: 0;
+    padding: 10px;
+    background-image: url(img/Rectangle\ 18.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+#cd5{
+    background-color: var(--cor-primary2);
+    border-radius: 15px;
+
+}
+
+#cd5:hover{
+    background-color: var(--cor-primary);
+}
+
+footer {
+    padding-top: 90px;
+}
+
+.bt1 {
+    padding: 11px 10px;
+    border: var(--cor-primary) 3px solid;
+    border-radius: 5px;
+    background-color: #ffffff00;
+    color: var(--cor-white);
+    font-size: 20px;
+    width: 280px;
+    cursor: pointer;
+
+}
+
+.bt1:hover {
+
+    background-color: var(--cor-primary);
+    color: var(--cor-dark);
+    transition: 0.7s;
+    font-size: 20px;
+    font-weight: 800px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color: var(--cor-primary2);
+
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+/*
+-- Formulários
+*/
+
+/*
+-- Tabelas
+*/
+
+/*
+-- Classes de Uso Geral
+*/
