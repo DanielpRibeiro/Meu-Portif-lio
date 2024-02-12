@@ -513,6 +513,18 @@ a {
     h1 {
         font-size: 30px;
     }
+    #p1{
+        height: 80vh !important;
+
+    }
+    #home{
+        background-attachment:local !important;
+
+    }
+    #conhecimentos #cd{
+        margin-top: -10px !important;
+        padding: 0 10px;
+    }
 }
 
 
