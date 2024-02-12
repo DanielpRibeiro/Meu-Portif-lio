@@ -518,8 +518,11 @@ a {
 
     }
     #home{
-        background-attachment:local !important;
-
+        background-image: url(img/home.jpg) !important;
+        background-position: bottom !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-attachment:scroll !important;
     }
     #conhecimentos #cd{
         margin-top: -10px !important;
