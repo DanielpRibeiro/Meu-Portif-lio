@@ -326,7 +326,15 @@ a {
     }
 
     #sobre-mim {
-        padding-top: 30px;
+        /* padding-top: 30px; */
+        padding: 90px !important;
+        border: 2px solid red;
+    }
+    #conhecimento{
+        margin: 5px 2% !important;
+    }
+    #conhecimentos{
+        margin: 5px 2% !important;
     }
 }
 
@@ -398,7 +406,7 @@ a {
     }
 
     #sobre-mim {
-        padding: 20px 10% !important;
+        padding: 20px 5% !important;
         height: auto !important;
 
     }
@@ -447,6 +455,12 @@ a {
         border-radius: 15px;
         /* border: 1px solid red; */
         
+    }
+    #conhecimento{
+        margin: 5px 2% !important;
+    }
+    #conhecimentos{
+        margin: 5px 2% !important;
     }
 
 
